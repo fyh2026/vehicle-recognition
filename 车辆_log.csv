@@ -1,0 +1,7 @@
+﻿frame,track_id,class,direction
+66,3,car,OUT
+144,4,car,IN
+304,7,car,IN
+372,6,truck,IN
+460,9,car,IN
+466,10,car,OUT
