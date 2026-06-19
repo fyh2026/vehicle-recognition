@@ -108,3 +108,17 @@ python vehicle_detect.py --source test.mp4 --debug
 - **缩放加速**：检测前缩小分辨率，大幅降低推理时间
 - **叉积方向判定**：计算检测框底边中点相对于计数线的叉积符号，符号翻转即判定穿越
 
+## 开源致谢
+
+本项目站在巨人的肩膀上，感谢以下开源项目的贡献：
+
+| 项目 | 作者/组织 | 许可证 | 用途 |
+|------|----------|--------|------|
+| [Ultralytics](https://github.com/ultralytics/ultralytics) (YOLO11) | Ultralytics | AGPL-3.0 | 目标检测与分类模型 |
+| [supervision](https://github.com/roboflow/supervision) | Roboflow | MIT | ByteTrack 跟踪、标注工具、LineZone 计数 |
+| [ByteTrack](https://github.com/ifzhang/ByteTrack) | ifzhang | MIT | 多目标跟踪算法 |
+| [OpenCV](https://github.com/opencv/opencv-python) | OpenCV team | Apache 2.0 | 视频处理与画面绘制 |
+| [NumPy](https://github.com/numpy/numpy) | NumPy community | BSD-3-Clause | 数组运算与数据处理 |
+| [PyTorch](https://github.com/pytorch/pytorch) | Meta / Linux Foundation | BSD | 深度学习推理引擎 |
+
+**尊重开源，回馈开源** —— 如果你觉得这个项目有帮助，也请给上面的开源项目点个 ⭐
