@@ -80,9 +80,7 @@ vehicle-recognition/
 ├── vehicle_detect.py    # Main program (~280 lines)
 ├── requirements.txt     # Python dependencies
 ├── README.md           # Chinese documentation
-├── README_EN.md        # This file (English)
-├── comparison.md       # Comparison with face recognition project (English)
-└── 对比.md             # Comparison with face recognition project (Chinese)
+└── README_EN.md        # This file (English)
 ```
 
 ## How It Works
