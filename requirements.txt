@@ -3,3 +3,6 @@ supervision>=0.23.0
 opencv-python>=4.9.0
 numpy>=1.26.0
 torch>=2.1.0
+
+# 开发 / 测试
+pytest>=8.0.0

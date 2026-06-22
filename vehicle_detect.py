@@ -66,6 +66,9 @@ class VehicleCounter:
         # ---- 计数线 (百分比坐标 → 像素坐标) ----
         w = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         h = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        # 叉积判定的容差阈值，基于图像对角线归一化 (0.1%)
+        # 避免不同分辨率下硬编码 5 像素失效
+        self._cross_eps = (w + h) * 0.0005
         self.line_start = sv.Point(
             int(line_coords[0] * w / 100),
             int(line_coords[1] * h / 100),
@@ -130,7 +133,7 @@ class VehicleCounter:
 
             # 叉积判定方向
             cross = (ex - lx) * (cy - ly) - (ey - ly) * (cx - lx)
-            side = 1 if cross > 5 else (-1 if cross < -5 else 0)
+            side = 1 if cross > self._cross_eps else (-1 if cross < -self._cross_eps else 0)
 
             prev = self._prev_side.get(tid)
             if prev is not None and prev != 0 and side != 0 and prev != side:
