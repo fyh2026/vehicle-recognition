@@ -80,7 +80,6 @@ python vehicle_detect.py --source test.mp4 --debug
 ├── vehicle_detect.py    # 主程序（~280 行）
 ├── requirements.txt     # Python 依赖
 ├── README.md           # 本文件（中文）
-└── README_EN.md        # English version
 ```
 
 ## 工作原理
